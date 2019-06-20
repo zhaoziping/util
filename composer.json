@@ -1,0 +1,22 @@
+{
+    "name": "zhaoziping/util",
+    "description": "集合工具和dump工具",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhaoziping",
+            "email": "425178360@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Simple\\Util\\": "src/"
+        },
+        "files": [
+        ]
+    },
+    "minimum-stability": "RC",
+    "require": {
+        "symfony/var-dumper": "^4.3"
+    }
+}
