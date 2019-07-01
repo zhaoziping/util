@@ -631,6 +631,29 @@ class Collection
 
         return $this;
     }
+
+
+    //依赖symfony/var-dumper 包
+    public function dd($flag = true)
+    {
+        if (function_exists("dd")){
+            if ($flag){
+                dd($this->toArray());
+            }
+            dd($this);
+        }
+    }
+    //依赖symfony/var-dumper 包
+    public function dump($flag = true)
+    {
+        if (function_exists("dump")){
+            if ($flag){
+                dump($this->toArray());
+            }else{
+                dump($this);
+            }
+        }
+    }
     //是否可执行的回调
     protected function useAsCallable($value)
     {
