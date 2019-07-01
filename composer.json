@@ -15,8 +15,5 @@
         "files": [
         ]
     },
-    "minimum-stability": "RC",
-    "require": {
-        "symfony/var-dumper": "^4.3"
-    }
+    "minimum-stability": "RC"
 }
